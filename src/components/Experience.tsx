@@ -41,14 +41,14 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="py-20" ref={ref}>
-      <div className="max-w-4xl mx-auto px-6">
+    <section id="experience" className="py-16 sm:py-20 px-4 sm:px-6" ref={ref}>
+      <div className="max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-12 font-mono">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-12 font-mono">
             <span className="text-primary mr-2">02.</span>
             Where I've Worked
           </h2>

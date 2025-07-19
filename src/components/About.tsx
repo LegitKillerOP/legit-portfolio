@@ -18,20 +18,20 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20" ref={ref}>
-      <div className="max-w-4xl mx-auto px-6">
+    <section id="about" className="py-16 sm:py-20 px-4 sm:px-6" ref={ref}>
+      <div className="max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-12 font-mono">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-12 font-mono">
             <span className="text-primary mr-2">01.</span>
             About Me
           </h2>
 
-          <div className="grid md:grid-cols-3 gap-12 items-start">
-            <div className="md:col-span-2">
+          <div className="grid lg:grid-cols-3 gap-12 items-start">
+            <div className="lg:col-span-2">
               <motion.div
                 className="space-y-6 text-muted-foreground leading-relaxed"
                 initial={{ opacity: 0, x: -30 }}
@@ -79,20 +79,20 @@ const About = () => {
               </motion.ul>
             </div>
 
-            <div className="relative group">
+            <div className="relative group order-first lg:order-last">
               <motion.div
                 className="relative"
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
                 transition={{ duration: 0.6, delay: 0.3 }}
               >
-                <div className="relative z-10 w-72 h-72 rounded border-2 border-primary/30 overflow-hidden group-hover:border-primary/60 transition-all duration-300">
+                <div className="relative z-10 w-64 h-64 sm:w-72 sm:h-72 mx-auto rounded border-2 border-primary/30 overflow-hidden group-hover:border-primary/60 transition-all duration-300">
                   <div className="w-full h-full bg-gradient-to-br from-primary/20 to-blue-500/20 flex items-center justify-center">
                     <div className="text-6xl text-primary/60"><img src="/Logo.png" alt="" /></div>
                   </div>
                   <div className="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-all duration-300" />
                 </div>
-                <div className="absolute -top-6 -right-6 w-72 h-72 border-2 border-primary rounded -z-10 group-hover:top-[-20px] group-hover:right-[-20px] transition-all duration-300" />
+                <div className="absolute -top-6 -right-6 w-64 h-64 sm:w-72 sm:h-72 border-2 border-primary rounded -z-10 group-hover:top-[-20px] group-hover:right-[-20px] transition-all duration-300" />
               </motion.div>
             </div>
           </div>

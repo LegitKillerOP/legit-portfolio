@@ -63,14 +63,14 @@ const Work = () => {
   ];
 
   return (
-    <section id="work" className="py-20" ref={ref}>
-      <div className="max-w-6xl mx-auto px-6">
+    <section id="work" className="py-16 sm:py-20 px-4 sm:px-6" ref={ref}>
+      <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-12 font-mono">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-12 font-mono">
             <span className="text-primary mr-2">03.</span>
             Some Things I've Built
           </h2>
@@ -80,34 +80,34 @@ const Work = () => {
             {projects.map((project, index) => (
               <motion.div
                 key={project.title}
-                className="grid md:grid-cols-12 gap-4 items-center"
+                className="grid lg:grid-cols-12 gap-6 items-center"
                 initial={{ opacity: 0, y: 30 }}
                 animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
                 transition={{ duration: 0.6, delay: index * 0.2 }}
               >
                 {/* Project Image */}
-                <div className={`md:col-span-7 ${index % 2 === 1 ? 'md:order-2' : ''} relative group`}>
+                <div className={`lg:col-span-7 ${index % 2 === 1 ? 'lg:order-2' : ''} relative group`}>
                   <div className="relative overflow-hidden rounded bg-gradient-to-br from-primary/20 to-blue-500/20 aspect-video flex items-center justify-center border border-primary/30 hover:border-primary/60 transition-all duration-300">
-                    <div className="text-6xl opacity-100"><img src={project.image} alt="" /></div>
+                    <div className="text-6xl opacity-100"><img src={project.image} alt="" className="w-full h-full object-cover" /></div>
                     <div className="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-all duration-300" />
                   </div>
                 </div>
 
                 {/* Project Content */}
-                <div className={`md:col-span-5 ${index % 2 === 1 ? 'md:order-1 md:text-right' : ''} relative z-10`}>
+                <div className={`lg:col-span-5 ${index % 2 === 1 ? 'lg:order-1 lg:text-right' : ''} relative z-10`}>
                   <p className="text-primary font-mono text-sm mb-2">Featured Project</p>
-                  <h3 className="text-2xl font-bold text-foreground mb-4 hover:text-primary transition-colors">
+                  <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-4 hover:text-primary transition-colors">
                     {project.title}
                   </h3>
-                  <div className="bg-card p-6 rounded shadow-lg mb-4 border border-border">
-                    <p className="text-muted-foreground leading-relaxed">{project.description}</p>
+                  <div className="bg-card p-4 sm:p-6 rounded shadow-lg mb-4 border border-border">
+                    <p className="text-muted-foreground leading-relaxed text-sm sm:text-base">{project.description}</p>
                   </div>
-                  <ul className={`flex flex-wrap gap-4 text-sm font-mono text-muted-foreground mb-6 ${index % 2 === 1 ? 'md:justify-end' : ''}`}>
+                  <ul className={`flex flex-wrap gap-3 sm:gap-4 text-xs sm:text-sm font-mono text-muted-foreground mb-6 ${index % 2 === 1 ? 'lg:justify-end' : ''}`}>
                     {project.tech.map((tech) => (
                       <li key={tech}>{tech}</li>
                     ))}
                   </ul>
-                  <div className={`flex gap-4 ${index % 2 === 1 ? 'md:justify-end' : ''}`}>
+                  <div className={`flex gap-4 ${index % 2 === 1 ? 'lg:justify-end' : ''}`}>
                     <motion.a
                       href={project.github}
                       className="text-muted-foreground hover:text-primary transition-colors"
@@ -134,8 +134,8 @@ const Work = () => {
 
           {/* Other Projects */}
           <div>
-            <h3 className="text-2xl font-bold text-foreground mb-12 text-center">Other Noteworthy Projects</h3>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-12 text-center">Other Noteworthy Projects</h3>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {otherProjects.map((project, index) => (
                 <motion.div
                   key={project.title}

@@ -7,8 +7,8 @@ const Contact = () => {
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 
   return (
-    <section id="contact" className="py-20" ref={ref}>
-      <div className="max-w-2xl mx-auto px-6 text-center">
+    <section id="contact" className="py-16 sm:py-20 px-4 sm:px-6" ref={ref}>
+      <div className="max-w-2xl mx-auto text-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
@@ -24,7 +24,7 @@ const Contact = () => {
           </motion.h2>
 
           <motion.h3
-            className="text-4xl md:text-5xl font-bold text-foreground mb-6"
+            className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-6"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -33,7 +33,7 @@ const Contact = () => {
           </motion.h3>
 
           <motion.p
-            className="text-lg text-muted-foreground leading-relaxed mb-12 max-w-lg mx-auto"
+            className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-12 max-w-lg mx-auto"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.6, delay: 0.3 }}
@@ -49,7 +49,7 @@ const Contact = () => {
           >
             <motion.a
               href="mailto:contact.legitkiller@gmail.com"
-              className="inline-block px-8 py-4 border-2 border-primary text-primary rounded bg-transparent hover:bg-primary/10 transition-all duration-300 font-mono"
+              className="inline-block px-6 py-3 sm:px-8 sm:py-4 border-2 border-primary text-primary rounded bg-transparent hover:bg-primary/10 transition-all duration-300 font-mono text-sm sm:text-base"
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
             >

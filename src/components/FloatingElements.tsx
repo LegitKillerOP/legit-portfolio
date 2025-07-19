@@ -10,9 +10,9 @@ const FloatingElements = () => {
 
   return (
     <>
-      {/* Floating Social Icons */}
+      {/* Floating Social Icons - Hidden on small screens */}
       <motion.div
-        className="floating-social"
+        className="floating-social hidden lg:block"
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.6, delay: 1 }}
@@ -37,9 +37,9 @@ const FloatingElements = () => {
         </div>
       </motion.div>
 
-      {/* Floating Email */}
+      {/* Floating Email - Hidden on small screens */}
       <motion.div
-        className="floating-email"
+        className="floating-email hidden lg:block"
         initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.6, delay: 1 }}
