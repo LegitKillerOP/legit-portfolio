@@ -1,12 +1,11 @@
 import { motion } from 'framer-motion';
-import { Github, Twitter, Instagram, Linkedin, ExternalLink } from 'lucide-react';
+import { Github } from 'lucide-react';
+import { FaDiscord } from 'react-icons/fa';
 
 const FloatingElements = () => {
   const socialLinks = [
-    { icon: Github, href: 'https://github.com/swofty', label: 'GitHub' },
-    { icon: Twitter, href: 'https://twitter.com/swofty', label: 'Twitter' },
-    { icon: Instagram, href: 'https://instagram.com/swofty', label: 'Instagram' },
-    { icon: Linkedin, href: 'https://linkedin.com/in/swofty', label: 'LinkedIn' },
+    { icon: Github, href: 'https://github.com/LegitKillerOP', label: 'GitHub' },
+    { icon: FaDiscord, href: 'https://discord.gg/dedAEN2r4N', label: 'Discord' },
   ];
 
   return (
@@ -47,14 +46,14 @@ const FloatingElements = () => {
       >
         <div className="flex flex-col items-center space-y-6 after:content-[''] after:block after:w-px after:h-24 after:bg-muted-foreground after:mt-6">
           <motion.a
-            href="mailto:swofty@example.com"
+            href="mailto:contact.legitkiller@gmail.com"
             className="vertical-text text-muted-foreground hover:text-primary hover:-translate-y-1 transition-all duration-300 font-mono text-sm tracking-widest"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 1.2 }}
             style={{ writingMode: 'vertical-rl' }}
           >
-            swofty@example.com
+            contact.legitkiller@gmail.com
           </motion.a>
         </div>
       </motion.div>

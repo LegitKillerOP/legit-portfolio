@@ -9,53 +9,57 @@ const Work = () => {
 
   const projects = [
     {
-      title: 'Spotify Profile',
-      description: 'A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.',
-      tech: ['React', 'Styled Components', 'Express', 'Spotify API', 'Heroku'],
-      github: 'https://github.com/bchiang7/spotify-profile',
-      external: 'https://spotify-profile.herokuapp.com/',
-      image: '🎵',
+      title: 'Hypixel Skyblock Core',
+      description:
+        'A fully custom Skyblock core replicating the mechanics of Hypixel Skyblock. Designed for scalability, performance, and modularity, this core includes everything from custom items and NPCs to skill leveling, dungeons, and dynamic economies.',
+      tech: ['Java', 'Spigot API', 'MongoDB', 'Custom NMS'],
+      github: 'https://github.com/LegitKillerOP/hypixel-skyblock-core',
+      external: 'https://hypixelskyblockclone.netlify.app',
+      image: '/skyblock.png',
     },
     {
-      title: 'Halcyon Theme',
-      description: 'A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.',
-      tech: ['VS Code', 'Sublime Text', 'Atom', 'iTerm2', 'Hyper'],
-      github: 'https://github.com/bchiang7/halcyon-theme',
-      external: 'https://halcyon-theme.netlify.com/',
-      image: '🎨',
+      title: 'Hypixel Hub Core',
+      description:
+        'A professional-grade core replicating the Hypixel Hub experience. Built with dynamic cosmetics, player profiles, mystery boxes, gadgets, and mayors. Designed with modular plugin architecture for seamless updates and multi-server support.',
+      tech: ['Java', 'Spigot API', 'PlaceholderAPI'],
+      github: 'https://github.com/LegitKillerOP/hypixel-hub-core',
+      external: 'https://builtbybit.com/resources/h-hub-the-ultimate-lobby-plugin.69010/',
+      image: '/hub.png',
     },
     {
-      title: 'v4',
-      description: 'Fourth iteration of my personal website. Built with Gatsby and hosted on Netlify.',
-      tech: ['Gatsby', 'React', 'Styled Components', 'GraphQL'],
-      github: 'https://github.com/bchiang7/v4',
-      external: 'https://brittanychiang.com',
-      image: '🌐',
-    },
+      title: 'LegitPixel Website',
+      description:
+        'A modern, responsive website for the LegitPixel Minecraft network. Built with React.js and Tailwind CSS, it features a sleek design, dynamic content loading, and a custom admin panel for easy updates.',
+      tech: ['React.js', 'Tailwind CSS', 'Firebase'],
+      github: 'https://github.com/LegitKillerOP/LegitPixel',
+      external: 'https://legitpixel.vercel.app/',
+      image: '/legitpixel.png',
+    }
   ];
+
 
   const otherProjects = [
     {
-      title: 'Integrating Algolia Search',
-      description: 'Building a custom search component with Algolia InstantSearch.js',
-      tech: ['Algolia', 'JavaScript', 'CSS'],
-      github: 'https://github.com/bchiang7/course-source',
-      external: 'https://www.upstatement.com/blog/2017/integrating-algolia-search/',
+      title: 'Personal Portfolio',
+      description: 'A personal portfolio showcasing my work, skills, and projects.',
+      tech: ['ReactJS', 'TailwindCSS'],
+      github: 'https://github.com/legitkillerop/legit-portfolio',
+      external: '',
     },
     {
-      title: 'Google Keep Clone',
-      description: 'A simple Google Keep clone built with React and Firebase',
-      tech: ['React', 'Firebase', 'CSS'],
-      github: 'https://github.com/bchiang7/google-keep-clone',
-      external: 'https://google-keep-clone-c7.netlify.app/',
+      title: 'BungeeFunMod',
+      description: 'A BungeeCord plugin that adds fun features to Minecraft servers, and moderation tools.',
+      tech: ['Java', 'BungeeCord API'],
+      github: 'https://github.com/LegitKillerOP/Bungeefunmod',
+      external: '',
     },
     {
-      title: 'Apple Music Clone',
-      description: 'A simple Apple Music web player clone',
-      tech: ['React', 'CSS', 'Apple Music API'],
-      github: 'https://github.com/bchiang7/apple-music-clone',
-      external: 'https://apple-music-clone-c7.netlify.app/',
-    },
+      title: 'ItemChat',
+      description: 'A Minecraft plugin that allows players to send items in chat with custom formatting and lore.',
+      tech: ['Java', 'Spigot API', 'PlaceholderAPI'],
+      github: 'https://github.com/LegitKillerOP/itemchat',
+      external: 'https://www.spigotmc.org/resources/item-chat.117911/',
+    }
   ];
 
   return (
@@ -84,7 +88,7 @@ const Work = () => {
                 {/* Project Image */}
                 <div className={`md:col-span-7 ${index % 2 === 1 ? 'md:order-2' : ''} relative group`}>
                   <div className="relative overflow-hidden rounded bg-gradient-to-br from-primary/20 to-blue-500/20 aspect-video flex items-center justify-center border border-primary/30 hover:border-primary/60 transition-all duration-300">
-                    <div className="text-6xl opacity-60">{project.image}</div>
+                    <div className="text-6xl opacity-100"><img src={project.image} alt="" /></div>
                     <div className="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-all duration-300" />
                   </div>
                 </div>

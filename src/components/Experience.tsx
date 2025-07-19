@@ -9,33 +9,33 @@ const Experience = () => {
 
   const experiences = [
     {
-      company: 'Upstatement',
-      role: 'Senior Engineer',
-      duration: '2018 — Present',
+      company: 'LegitPixel',
+      role: 'Admin & Lead Developer',
+      duration: '2025 — Present',
       description: [
-        'Write modern, performant, maintainable code for a diverse array of client and internal projects',
-        'Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Gatsby, React, Craft, WordPress, Prismic, and Netlify',
-        'Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis',
+        'Lead the development of a Hypixel-inspired Minecraft network, focusing on performance, scalability, and an immersive lobby experience.',
+        'Designed and implemented custom plugins for minigames, survival, and skyblock modes, enhancing gameplay with unique features.',
+        'Managed a team of developers and testers while maintaining code quality, server uptime, and user satisfaction for thousands of players.',
       ],
     },
     {
-      company: 'MullenLowe',
-      role: 'Creative Technologist',
-      duration: '2015 — 2018',
+      company: 'GodSpunky',
+      role: 'Owner',
+      duration: '2021 — 2022',
       description: [
-        'Developed and maintained code for in-house and client websites primarily using HTML, CSS, Sass, JavaScript, and jQuery',
-        'Manually tested sites in various browsers and mobile devices to ensure cross-browser compatibility and responsiveness',
-        'Clients included JetBlue, Lovesac, U.S. Cellular, U.S. Department of Defense, and more',
+        'Owner and operated India’s #1 Minecraft server, peaking at over 600 concurrent players daily.',
+        'Oversaw server infrastructure, plugin development, and community management for survival, skyblock, and minigame modes.',
+        'Built and maintained a loyal player base through frequent updates, seasonal content, and engaging events.',
       ],
     },
     {
-      company: 'Starry',
-      role: 'Software Engineer',
-      duration: '2014 — 2015',
+      company: 'Krystal Networks',
+      role: 'Developer',
+      duration: '2021 — 2021',
       description: [
-        'Engineered and maintained major features of Starry\'s customer-facing web app using ES6, Handlebars, Backbone, Marionette and CSS',
-        'Proposed and implemented scalable solutions to issues identified with cloud services and applications responsible for communicating with the Starry internet infrastructure',
-        'Collaborated with designers and other developers to ensure thoughtful and coherent user experiences across Starry\'s iOS and Android mobile apps',
+        'Contributed to core development of a Hypixel remake project focused on lobby systems and minigame prototypes.',
+        'Developed custom NPC interactions, GUI menus, and cosmetic systems to replicate Hypixel-style user experiences.',
+        'Collaborated with a small dev team to deploy updates, fix bugs, and gather feedback from a growing community.',
       ],
     },
   ];

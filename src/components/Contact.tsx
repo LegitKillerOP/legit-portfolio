@@ -38,8 +38,8 @@ const Contact = () => {
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            Although I'm not currently looking for any new opportunities, my inbox is always open. 
-            Whether you have a question or just want to say hi, I'll try my best to get back to you!
+            I'm always open to discussing new projects, creative ideas, or just having a chat about Minecraft development. 
+            Feel free to reach out via email or connect with me on social media.
           </motion.p>
 
           <motion.div
@@ -48,7 +48,7 @@ const Contact = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
           >
             <motion.a
-              href="mailto:swofty@example.com"
+              href="mailto:contact.legitkiller@gmail.com"
               className="inline-block px-8 py-4 border-2 border-primary text-primary rounded bg-transparent hover:bg-primary/10 transition-all duration-300 font-mono"
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}

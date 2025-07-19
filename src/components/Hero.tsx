@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 
 const Hero = () => {
   const [displayText, setDisplayText] = useState('');
-  const fullText = 'I build things for the web.';
+  const fullText = 'I craft Minecraft-plugin, web experiences.';
 
   useEffect(() => {
     let currentIndex = 0;
@@ -14,7 +14,7 @@ const Hero = () => {
       } else {
         clearInterval(timer);
       }
-    }, 100);
+    }, 75);
 
     return () => clearInterval(timer);
   }, []);
@@ -42,7 +42,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            Swofty Developer.
+            Legit Killer
           </motion.h2>
 
           <motion.h3
@@ -61,9 +61,9 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.6 }}
           >
-            I'm a software engineer specializing in building exceptional digital experiences. 
-            Currently, I'm focused on creating accessible, human-centered products at{' '}
-            <span className="text-primary">Upstatement</span>.
+            I’m a full-stack developer blending Minecraft's plugin and
+            modern web technologies to craft bold, and beautiful digital
+            adventures. Let’s build your dream pixel-by-pixel.
           </motion.p>
 
           <motion.div

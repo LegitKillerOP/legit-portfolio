@@ -2,11 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Swofty.net Design System */
-
 @layer base {
   :root {
-    /* Swofty Color Palette */
     --dark-navy: 210 100% 5%;
     --navy: 210 100% 8%;
     --light-navy: 210 64% 15%;
@@ -20,7 +17,6 @@
     --pink: 300 80% 75%;
     --blue: 200 100% 70%;
 
-    /* Semantic tokens based on Swofty colors */
     --background: var(--dark-navy);
     --foreground: var(--lightest-slate);
     --card: var(--navy);

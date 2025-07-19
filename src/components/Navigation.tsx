@@ -45,34 +45,36 @@ const Navigation = () => {
           whileHover={{ scale: 1.05 }}
           onClick={() => scrollToSection('hero')}
         >
-          &lt;S /&gt;
+          &lt;LEGIT /&gt;
         </motion.div>
 
         {/* Navigation Links */}
-        <div className="hidden md:flex items-center space-x-8">
+        <div className="hidden md:flex items-center space-x-10">
           {navItems.map((item, index) => (
             <motion.button
               key={item.id}
               className="text-foreground hover:text-primary transition-colors duration-300 font-mono text-sm"
               onClick={() => scrollToSection(item.id)}
               whileHover={{ y: -2 }}
-              initial={{ opacity: 0, y: -20 }}
+              initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 * index }}
             >
               <span className="text-primary mr-1">0{index + 1}.</span>
               {item.label}
+              <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-cyan-400 transition-all duration-300 group-hover:w-full" />
             </motion.button>
           ))}
           <motion.a
-            href="/resume.pdf"
+            href="https://github.com/legitKillerOP/"
+            target='_blank'
             className="ml-4 px-4 py-2 border border-primary text-primary rounded bg-transparent hover:bg-primary/10 transition-all duration-300 font-mono text-sm"
             whileHover={{ scale: 1.05 }}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5 }}
           >
-            Resume
+            GitHub
           </motion.a>
         </div>
 

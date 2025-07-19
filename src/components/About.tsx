@@ -13,10 +13,8 @@ const About = () => {
     'Node.js',
     'Python',
     'Java',
-    'Spring Boot',
-    'PostgreSQL',
     'MongoDB',
-    'AWS',
+    'MySQL',
   ];
 
   return (
@@ -41,22 +39,23 @@ const About = () => {
                 transition={{ duration: 0.6, delay: 0.2 }}
               >
                 <p>
-                  Hello! My name is Swofty and I enjoy creating things that live on the internet. 
-                  My interest in web development started back in 2012 when I decided to try editing 
-                  custom Tumblr themes — turns out hacking together a custom reblog button taught me 
-                  a lot about HTML & CSS!
+                  Hey there! I’m <strong>LEGIT KILLER</strong>, a passionate developer with a love for bringing ideas to life—especially inside the blocky world of Minecraft. 
+                  My journey started with curiosity around game mechanics and plugin systems, and that quickly turned into full-fledged projects that blend creativity with technical precision.
                 </p>
 
                 <p>
-                  Fast-forward to today, and I've had the privilege of working at an advertising agency, 
-                  a start-up, a huge corporation, and a student-led design studio. My main focus these 
-                  days is building accessible, inclusive products and digital experiences at Upstatement 
-                  for a variety of clients.
+                  Over the years, I've worked on complex Minecraft plugins, game systems, and full-stack applications—from Hypixel-style lobbies to survival-enhancing experiences. 
+                  Whether it's crafting immersive UIs, designing data-driven backends, or tuning gameplay loops, I aim to make every interaction feel polished and purposeful.
+                </p>
+
+                <p>
+                  My current focus is building polished, scalable systems that are not only functional but fun. I'm always exploring new ways to merge gameplay and development into something players love.
                 </p>
 
                 <p>
                   Here are a few technologies I've been working with recently:
                 </p>
+
               </motion.div>
 
               <motion.ul
@@ -89,7 +88,7 @@ const About = () => {
               >
                 <div className="relative z-10 w-72 h-72 rounded border-2 border-primary/30 overflow-hidden group-hover:border-primary/60 transition-all duration-300">
                   <div className="w-full h-full bg-gradient-to-br from-primary/20 to-blue-500/20 flex items-center justify-center">
-                    <div className="text-6xl text-primary/60">👨‍💻</div>
+                    <div className="text-6xl text-primary/60"><img src="/Logo.png" alt="" /></div>
                   </div>
                   <div className="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-all duration-300" />
                 </div>
